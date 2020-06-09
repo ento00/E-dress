@@ -1,0 +1,139 @@
+.card {
+    display: grid;
+    justify-content: center;
+    transition: transform .2s;
+}
+
+.card_a {
+    text-decoration: none;
+    color: #1a1a1a;
+}
+
+.product_limg {
+    height:431px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+}
+
+.list_desc{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px 0 10px;
+    list-style-type: none;
+    width: 100%;
+}
+
+.product-name{
+    font-weight: bold;
+}
+
+
+.container_desc{
+    /*visibility: visible;*/
+    display: flex;
+    position: relative;
+    bottom: 92px;
+    background: hsla(0,0%,100%,.8);
+    width: 100%;
+}
+
+.sale{
+    color: #ff0000;
+}
+
+.empty_container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background: #fff;
+    border-radius: 2px;
+    -webkit-box-shadow: 0 1px 2px 0 rgba(26, 26, 26, 0.05);
+    box-shadow: 0 1px 2px 0 rgba(26, 26, 26, 0.05);
+}
+
+.noRes {
+    font-size: large;
+    font-weight: bold;
+    text-align: center;
+}
+
+.button_like {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    left: 252px;
+    bottom: 478px;
+    border-radius: 50%;
+    height: 36px;
+    width: 36px;
+    border: none;
+    background-color: #fff;
+    cursor: pointer;
+}
+.s_like{
+    display: flex;
+    justify-content: center;
+    width: 25px;
+    height: 36px;
+}
+
+.img_like{
+    width: 25px;
+    height: 36px;
+    object-fit: contain;
+
+}
+
+.grid-container_p {
+    width: 100%;
+    padding-top: 200px;
+    /*right: 0;*/
+    /*left: 0;*/
+}
+
+.grid_p {
+    display: grid;
+    margin: 20px .4%;
+}
+.grid-col_p {
+    grid-template-columns: repeat(3, 1fr);
+    padding-top: 30px;
+}
+
+
+@media screen and (max-width: 992px) {
+    .grid-col_p {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 730px) {
+    .grid-col_p {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+.heart {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: url(https://cssanimation.rocks/images/posts/steps/heart.png) no-repeat;
+    background-position: 0 0;
+    cursor: pointer;
+    animation: fave-heart 1s steps(28);
+}
+.heart:hover {
+    background-position: -2800px 0;
+    transition: background 1s steps(28);
+}
+@keyframes fave-heart {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: -2800px 0;
+    }
+}

@@ -1,0 +1,145 @@
+img {
+    max-width: 300px;
+}
+button{
+    background: #00a6de;
+    color: #fff;
+    border: 0;
+    padding: 8px;
+}
+button:hover{
+    background: #fff;
+    border: 1px solid #00a6de;
+    color: #00a6de;
+}
+
+#donwload{
+    display: flex;
+    justify-content: flex-end;
+    max-width: 860px;
+    margin: auto;
+}
+.invoice-box {
+    max-width: 800px;
+    margin: auto;
+    padding: 30px;
+    border: 1px solid #eee;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .15);
+    font-size: 16px;
+    line-height: 24px;
+    font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif;
+    color: #555;
+}
+
+.grid {
+    display: grid;
+}
+.m_grid{
+    padding: 20px .4%;
+}
+.grid-col-3{
+    border-bottom: 1px solid #eee;
+}
+
+.sub_grid-heading,.sub_grid, .sub_grid-3 {
+    display: flex;
+    flex-direction: column;
+    line-height: 20px;
+    text-align: start;
+    color: #000;
+    align-self: center;
+}
+
+.sub_grid-heading:nth-child(2),.sub_grid:nth-child(2) {
+    text-align: end;
+}
+
+.sub_grid-3:nth-child(2) {
+    text-align: center;
+}
+
+.sub_grid-3:nth-child(3) {
+    text-align: center;
+}
+
+.sub_grid-3:nth-child(4) {
+    text-align: center;
+}
+
+.sub_grid-3:nth-child(5) {
+    text-align: end;
+}
+
+.grid-col-heading,.grid-col-2,.grid-col-summary{
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-col-summary{
+    width: 200px;
+}
+
+.grid-col-3 {
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.s_val {
+    margin: 0;
+
+}
+
+.title_tab {
+    padding-top: 20px;
+    background: #eee;
+    font-weight: bold;
+    padding: 5px;
+    vertical-align: top;
+
+}
+
+.td_tab {
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.invoice_summary {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+}
+
+.title_summary{
+    background: #eee;
+    padding: 8px;
+}
+
+.td_summary{
+    background: #f9f9f9;
+    padding-bottom: 8px;
+    padding-top: 8px;
+}
+
+
+
+@media screen and (max-width: 600px) {
+    .grid-col-heading {
+        grid-template-columns: repeat(1, 1fr);
+        display: flex;
+        flex-direction: column;
+        text-align: start;
+    }
+
+    img{
+        position: relative;
+        left: -35px;
+        width: 250px;
+    }
+    .sub_grid-heading{
+        width: 200px;
+        padding-bottom: 20px;
+    }
+    .sub_grid-heading:nth-child(2){
+        text-align: start;
+    }
+
+}
